@@ -53,6 +53,13 @@
     font-weight: 700;
 }
 
+.submitBtn:hover{
+    background: transparent;
+    color: #fff;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
 .links{
     display: flex;
     flex-wrap: wrap;
@@ -63,6 +70,7 @@
     height: 3.5rem;
     width: 3.5rem;
     margin: 0 0.75rem;
+    cursor: pointer;
 }
 
 @media (max-width: 780px) {
@@ -71,5 +79,21 @@
         margin-left: 1.75rem;
     }
     
+}
+
+@media (max-width: 480px) {
+    .contactForm{
+        width: 80vw;
+        margin-left: 3rem;
+    }
+
+    .contactDesc{
+        font-size: 0.8rem;
+    }
+
+    .link{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
 }
 

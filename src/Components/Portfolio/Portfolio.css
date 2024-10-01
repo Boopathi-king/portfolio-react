@@ -63,4 +63,10 @@
     .worksImg{
         height: 48vw;
     }
+
+    .worksDesc{
+        font-size: 1rem;
+        width: 100%;
+        max-width: 80rem;
+    }
 }
