@@ -1,0 +1,137 @@
+#skills-page{
+    margin: 0 auto;
+    min-height: calc(100vh-5rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    /* color: black; */
+}
+
+.myskill{
+    margin-top: 40px;
+}
+
+.skillsPageExplore{
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.skillsTitle{
+    font-size: 3rem;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    /* border: 2px solid white; */
+    background-color: #ffffff15;
+    color: white;
+    margin-bottom: 40px;
+    border-radius: 30px;
+}
+
+.skill-container h2{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.checkmark img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.skills-gridcard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+}
+
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* background: #ffffff15; */
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0,0, 0.1);
+}
+
+.skill-info h3{
+    font-size: 1.4rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+.skill-info p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@media (max-width:880px) {
+    .skill-container{
+        max-width: 40rem;
+    }
+}
+
+@media (max-width: 690px) {
+    .skill-container{
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .skill-container{
+        max-width: 70vw;
+    }
+    .skill-card{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-gridcard{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .skill-card{
+        padding: 10px 5px;
+        margin:0 auto;
+    }
+
+    .skill-info h3{
+        font-size: 1rem;
+    }
+
+    .skill-info p {
+        font-size: .8rem;
+    }
+
+    .checkmark img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .skill-container h2{
+        font-size: 1.2rem;
+        font-weight: 450;
+    }
+}

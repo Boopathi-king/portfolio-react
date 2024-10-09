@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './Contact.css';
 import FacebookIcon from './../../assets/facebook-icon.png';
 import InstagramIcon from './../../assets/instagram.png';
-import TwitterIcon from './../../assets/twitter.png';
+import GithubIcon from './../../assets/github.png';
 import LinkedinIcon from './../../assets/Linkedin.png';
 import emailjs from '@emailjs/browser';
 
@@ -29,6 +29,10 @@ const Contact = () => {
             },
           );
       };
+
+      const handleImageClick = (url) => {
+        window.open(url, '_blank');
+    }
   return (
     <section id='contactpage'>
         <div id='contact'>
@@ -42,10 +46,10 @@ const Contact = () => {
                 <textarea className='message' name='message' rows={5} placeholder='Your Message' />
                 <button type='submit' value="Send" className='submitBtn'>Submit</button>
                 <div className='links'>
-                    <img src={FacebookIcon} alt='facebook' className='link' />
-                    <img src= {InstagramIcon} alt='Instagram' className='link' />
-                    <img src={TwitterIcon} alt='Twitter' className='link' />
-                    <img src={LinkedinIcon} alt='LinkedIn' className='link' />
+                    <img src={FacebookIcon} alt='facebook' className='link' onClick={() => handleImageClick('https://www.facebook.com/share/oNUnsqt9ZjoUd9tj/?mibextid=LQQJ4d')}/>
+                    <img src= {InstagramIcon} alt='Instagram' className='link' onClick={() => handleImageClick('https://www.instagram.com/mr_redox_kido/')}/>
+                    <img src={GithubIcon} alt='Github' className='link' onClick={() => handleImageClick('https://github.com/Boopathi-king')}/>
+                    <img src={LinkedinIcon} alt='LinkedIn' className='link' onClick={() => handleImageClick('https://www.linkedin.com/in/boopathi-varatharaj-639ab028b/')} />
                 </div>
             </form>
         </div>
