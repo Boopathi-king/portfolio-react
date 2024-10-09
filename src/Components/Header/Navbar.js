@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link activeClass= 'active' to='skills' spy={true} smooth={true} offset={-50} duration={500}  className='listItem' onClick={() => setShowMenu(false)}>About</Link>
             <Link activeClass= 'active' to='works' spy={true} smooth={true} offset={-50} duration={500}  className='listItem' onClick={() => setShowMenu(false)}>Portfolio</Link>
             <Link activeClass= 'active' to='skills-page' spy={true} smooth={true} offset={-40} duration={500} className='listItem' onClick={() => setShowMenu(false)} >Skills</Link>
-            <Link activeClass= 'active' to='contact' spy={true} smooth={true} offset={-30} duration={500}  className='listItem' onClick={() => setShowMenu(false)}>Contact</Link>
+            <Link activeClass= 'active' to='contact' spy={true} smooth={true} offset={-40} duration={500}  className='listItem' onClick={() => setShowMenu(false)}>Contact</Link>
         </div>
     </nav>
   )
