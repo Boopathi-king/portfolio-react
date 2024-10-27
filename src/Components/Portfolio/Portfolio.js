@@ -1,11 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
-import Portfolio1 from './../../assets/portfolio-1.png';
-import Portfolio2 from './../../assets/portfolio-2.png';
-import Portfolio3 from './../../assets/portfolio-3.png';
-import Portfolio4 from './../../assets/portfolio-4.png';
-import Portfolio5 from './../../assets/portfolio-5.png';
-import Portfolio6 from './../../assets/portfolio-6.png';
+import Project1 from './../../assets/Project1.png';
+import Project2 from './../../assets/Project2.png';
 
 
 const Portfolio = () => {
@@ -14,12 +10,16 @@ const Portfolio = () => {
         <h2 className='worksTitle'> My Portfolio</h2>
         <span className='worksDesc'>As a front-end developer, I create responsive, user-friendly web applications using HTML5, CSS3, JavaScript, and React. My projects focus on clean code, cross-browser compatibility, accessibility, and performance optimization. I integrate APIs and use design tools like Figma, ensuring seamless functionality and visually appealing, user-centric experiences.</span>
         <div className='workImgs'>
-            <img src={Portfolio1} alt='' className='worksImg' />
-            <img src={Portfolio2} alt='' className='worksImg' />
-            <img src={Portfolio3} alt='' className='worksImg' />
-            <img src={Portfolio4} alt='' className='worksImg' />
-            <img src={Portfolio5} alt='' className='worksImg' />
-            <img src={Portfolio6} alt='' className='worksImg' />
+          <img src={Project1} alt='Project 1' className='worksImg' />
+                <div className='projectButtons'>
+                    <a href='https://github.com/Boopathi-king/Hear-it-Music-app.git' target='_blank' rel='noopener noreferrer' className='projectBtn'>GitHub Repo</a>
+                    <a href='https://hear-it-demo.netlify.app/' target='_blank' rel='noopener noreferrer' className='projectBtn'>Live Preview</a>
+                </div>
+          <img src={Project2} alt='Project 1' className='worksImg' />
+                <div className='projectButtons'>
+                    <a href='https://github.com/Boopathi-king/Learn-now-project.git' target='_blank' rel='noopener noreferrer' className='projectBtn'>GitHub Repo</a>
+                    <a href='https://learn-now-project.netlify.app/' target='_blank' rel='noopener noreferrer' className='projectBtn'>Live Preview</a>
+                </div>
         </div>
 
         <button className='workBtn'>See more</button>
