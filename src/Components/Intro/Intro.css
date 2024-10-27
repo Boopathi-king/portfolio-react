@@ -12,8 +12,13 @@
     top: 1rem;
     right: 0;
     z-index: -1;
-    object-fit: cover;
+    object-fit: fill;
+    margin-right: 30px;
+    margin-top: 10px;
     height: 80vh;
+    width: 35vw;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .introContent{
@@ -70,6 +75,7 @@
 @media (max-width: 780px) {
     .bg{
         right: -5vw;
+        width: 70vw;
     }
 
     .introContent{
@@ -85,6 +91,7 @@
     
     .bg{
         right: -0vw;
+        left: 3vw;
         top: 50px;
         height: 65vh;
         width: 100vw;
